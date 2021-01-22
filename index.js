@@ -229,7 +229,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(num='artisit') {
   /*Your Code Here*/
 }
 
@@ -245,6 +245,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/){
   /*Your Code Here*/
+
 }
 
 
