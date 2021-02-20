@@ -252,7 +252,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(ray){
 
   let sommrray=[];
-    for(let i=0; 1 < ray.length;i++){
+    for(let i=0; 1 < artists.length;i++){
       if(artists[i]['years'] >= 1900 && artists[i].years.split(" - ")[1] <= 2000 )
         sommrray.push(ray[i].name)
       }
@@ -274,12 +274,12 @@ console.log(get20s(artists))
 
 function removeArtist(dead, who){
    /*Your Code Here*/
-    artists.splice(dead, who);
+    dead.splice(who, 1);
 
-    return artists.length;
+    return dead.length;
 }
 
-console.log(removeArtist(artists,1))
+console.log(removeArtist(artists,7))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
