@@ -250,17 +250,17 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(ray){
-/*
+
   let sommrray=[];
     for(let i=0; 1 < ray.length;i++){
-      if(if only i knew this part)
-        sommrray.push(array[i].name)
+      if(artists[i]['years'] >= 1900 && artists[i].years.split(" - ")[1] <= 2000 )
+        sommrray.push(ray[i].name)
       }
       return sommrray
     }
 
 
-console.log(get20s(artists))  */
+console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -274,12 +274,12 @@ console.log(get20s(artists))  */
 
 function removeArtist(dead, who){
    /*Your Code Here*/
-    artists.splice(who, 1)
+    artists.splice(dead, who);
 
     return artists.length;
 }
 
-console.log(removeArtist(artists))
+console.log(removeArtist(artists,1))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -298,9 +298,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push(id, name, years, genre, nationality, bio);
+    return array;
   }
+
+  console.log(addArtist(artists, 20, 'Osei', '1991-2021', 'Web Design', 'African American', 'I hate myself'))
 
 
 
